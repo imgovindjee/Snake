@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    background: linear-gradient(190deg, rgb(250, 47, 74), rgb(250, 161, 161));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    background-color: rgba(221, 219, 81, .801);
+}
+
+#menu {
+    position: absolute;
+    width: 700px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .45);
+    background-color: rgba(95, 138, 231, .9);
+}
+
+#menu>h1 {
+    font-family: "Tektur", cursive;
+    word-spacing: 10px;
+    letter-spacing: 7px;
+}
+
+#menu>h1>span {
+    color: red;
+    font-size: 2.5rem;
+}
+
+.head {
+    background-color: red;
+    border-radius: 30%;
+    margin: 1px;
+    border: .05vmin solid rgb(168, 161, 161);
+}
+
+.snakeBody {
+    margin: 1px;
+    border-radius: 40%;
+    background-color: green;
+}
+
+.food {
+    border-radius: 50%;
+    background-color: black;
+}
